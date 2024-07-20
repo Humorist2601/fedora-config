@@ -147,16 +147,6 @@ mybash_and_dotfiles() {
     "$USER_HOME/GitHub/$repository/setup.sh"
 }
 
-# Function to install nvidia drivers
-nvidia() {
-    if lspci | grep -i "nvidia" &> /dev/null; then
-        print_message "${GREEN}" "NVIDIA GPU detected. Installing NVIDIA drivers..."
-        install_packages "akmod-nvidia" "xorg-x11-drv-nvidia-cuda" "nvidia-vaapi-driver" "libva-utils" "vdpauinfo" "vulkan"
-    else
-        print_message "${YELLOW}" "No NVIDIA GPU detected. Skipping NVIDIA driver installation."
-    fi
-}
-
 # END VARIABLE AND FUNCTION DECLARATION
 
 # START SCRIPT RUN
@@ -180,9 +170,6 @@ install_packages "@'Common NetworkManager Submodules'" "@'Development Tools'" "@
 
 # Fedora RPM Fusion
 install_packages "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
-
-# Detect and install NVIDIA drivers
-nvidia
 
 # Adding COPR packages, such as hyprland
 print_message "${GREEN}" "Adding COPR repositories..."
