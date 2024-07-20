@@ -1,6 +1,6 @@
-# Fedora-M0streng0
+# fedora-config
 
-Automate the setup of your [Minimal Fedora](https://fedoraproject.org/) with [Hyprland](https://hyprland.org/) with this script. Personalize, install essential packages, apply themes, and integrate Dotfiles effortlessly.
+Automate the setup of your [Minimal Fedora](https://fedoraproject.org/) and [Hyprland](https://hyprland.org/) with this script. Personalize, install essential packages, apply themes, and integrate Dotfiles effortlessly.
 
 ## Features
 
@@ -20,8 +20,8 @@ Do this after having a minimal install of Fedora.
 2. `sudo dnf install git -y`
 
 ### With script
-1. Clone this repository: `git clone https://github.com/M0streng0/Fedora-M0streng0`
-2. Enter the folder: `cd Fedora-M0streng0`
+1. Clone this repository: `git clone https://github.com/Humorist2601/fedora-config`
+2. Enter the folder: `cd fedora-config`
 2. Run the script: `./install.sh`
 3. Follow on-screen prompts.
 
@@ -30,6 +30,10 @@ Do this after having a minimal install of Fedora.
 ## Contributions
 
 Contributions are welcome! Fork the repository, make improvements, and submit a pull request.
+
+## Acknowledgements
+
+- Thanks to [M0streng0](https://github.com/M0streng0/Fedora-M0streng0) for the initial script
 
 ## License
 
